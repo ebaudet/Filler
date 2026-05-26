@@ -72,7 +72,7 @@ int		eb_get_board(t_gameboard *gb, int *tab, char **term)
 		}
 		if ((gb->board = (char **)malloc(sizeof(char *) * (gb->y + 1))) == 0)
 			perror("error malloc");
-		gb->board[gb->y] = '\0';
+		gb->board[gb->y] = NULL;
 	}
 	if (tab[1] > 1)
 		gb->board[tab[1] - 2] = ft_strdup(term[1]);
@@ -95,7 +95,7 @@ int		eb_get_piece(t_data *d, int *tab, char **term)
 		if ((d->p->piece = (char **)malloc(sizeof(char *) * (d->p->y + 1)))
 			== 0)
 			perror("error malloc");
-		d->p->piece[d->p->y] = '\0';
+		d->p->piece[d->p->y] = NULL;
 	}
 	if (tab[2] > 0)
 		d->p->piece[tab[2] - 1] = ft_strdup(term[0]);
