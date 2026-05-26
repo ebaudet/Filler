@@ -2,3 +2,4 @@
 libft/*.o
 filler
 libft/libft.a
+filler.trace
