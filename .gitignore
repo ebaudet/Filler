@@ -1,1 +1,4 @@
 .obj
+libft/*.o
+filler
+libft/libft.a
