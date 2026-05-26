@@ -17,6 +17,8 @@ int		main(void)
 	t_data		d;
 	int			tab[5] = {0, 0, 0, 0, 0};
 
+	d.p = NULL;
+	d.gb = NULL;
 	eb_init_data(&d, tab);
 	eb_get_data(&d, tab);
 	return (0);
